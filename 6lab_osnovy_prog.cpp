@@ -1,15 +1,15 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-double f(double,double);         // Прототип функції f
-double g(double,double,double);  // Прототип функції g
+double f(double,double);         // РџСЂРѕС‚РѕС‚РёРї С„СѓРЅРєС†С–С— f
+double g(double,double,double);  // РџСЂРѕС‚РѕС‚РёРї С„СѓРЅРєС†С–С— g
 int main()
 {
-   double y; // результат обислення виразу
-   int  a,   // ціле число a
-        b,   // ціле число b
-        c,   // ціле число c
-        d;   // ціле число d
+   double y; // СЂРµР·СѓР»СЊС‚Р°С‚ РѕР±РёСЃР»РµРЅРЅСЏ РІРёСЂР°Р·Сѓ
+   int  a,   // С†С–Р»Рµ С‡РёСЃР»Рѕ a
+        b,   // С†С–Р»Рµ С‡РёСЃР»Рѕ b
+        c,   // С†С–Р»Рµ С‡РёСЃР»Рѕ c
+        d;   // С†С–Р»Рµ С‡РёСЃР»Рѕ d
    cout << "Enter number a: ";
    cin >> a;
    cout << "Enter number b: ";
@@ -29,17 +29,17 @@ int main()
     num_4=f(b,c);
     num_5=f(a,c);
 
-    y=((num_1+num_2)/sqrt(num_3))+((c-num_3+1)/(num_4-num_1))*(1+(sqrt(num_3)/(num_4-num_5))); // Обчислення виразу згідно умови задачі
+    y=((num_1+num_2)/sqrt(num_3))+((c-num_3+1)/(num_4-num_1))*(1+(sqrt(num_3)/(num_4-num_5))); // РћР±С‡РёСЃР»РµРЅРЅСЏ РІРёСЂР°Р·Сѓ Р·РіС–РґРЅРѕ СѓРјРѕРІРё Р·Р°РґР°С‡С–
 
    cout <<"y= " << y;
 }
 double f(double x, double y)
     {
-        return x*x-y*y;          // Тіло функції f
+        return x*x-y*y;          // РўС–Р»Рѕ С„СѓРЅРєС†С–С— f
     }
 double g(double x, double y, double z)
     {
-        return (x+y)/(4*z*x);    // Тіло функції g
+        return (x+y)/(4*z*x);    // РўС–Р»Рѕ С„СѓРЅРєС†С–С— g
     }
 
 
